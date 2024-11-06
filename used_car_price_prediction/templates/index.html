@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car License Plate Recognition</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Used Car License Plate Recognition</h1>
+            <p>Upload a license plate image to view the detected number and vehicle details.</p>
+        </header>
+
+        <div class="form-group upload-section">
+            <h2>Upload License Plate Image</h2>
+            <div class="card">
+                <label for="lp_image" class="file-label">Upload License Plate Image:</label>
+                <input type="file" id="lp_image" name="lp_image" class="file-input" accept="image/*" required>
+                <div id="lp_image_preview" class="image-preview"></div> <!-- Image preview -->
+            </div>
+        </div>
+
+        <button type="button" class="btn" id="detectLicensePlate">Detect License Plate Number</button>
+
+        <div id="detected_license_plate" class="result">
+            <!-- Detected license plate number will be displayed here -->
+        </div>
+
+        <button type="button" class="btn" id="showLpDetails">Show Vehicle Details</button>
+
+        <div id="lp_details" class="result">
+            <!-- Vehicle details will be displayed here -->
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

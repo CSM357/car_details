@@ -1,0 +1,4 @@
+Flask
+numpy
+opencv-python
+# Add any other dependencies you need
